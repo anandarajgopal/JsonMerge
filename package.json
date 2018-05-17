@@ -1,0 +1,23 @@
+{
+  "name": "jsonmerge",
+  "version": "1.0.0",
+  "description": "JS implementation of RFC 7396 compliant JSON Merge Patch",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandarajgopal/JsonMerge.git"
+  },
+  "keywords": [
+    "Json",
+    "JsonMerge",
+    "JsonMergePatch",
+    "MergePatch"
+  ],
+  "author": "Anandaraj G",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anandarajgopal/JsonMerge/issues"
+  },
+  "homepage": "https://github.com/anandarajgopal/JsonMerge#readme"
+}
