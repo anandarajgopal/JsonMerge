@@ -1,6 +1,5 @@
-
-module.exports = {
-    mergePatch=function (Target, Patch) {
+var publicObject = {
+    mergePatch: function (Target, Patch) {
         //in js array and null is also considered as object
         if (typeof Patch === "object" && !Array.isArray(Patch) && Patch !== null) {
             if (typeof Target !== "object" || Array.isArray(Target) || Target === null) {
@@ -13,12 +12,13 @@ module.exports = {
                         delete Target[Name];
                     }
                 } else {
-                    Target[Name] = mergePatch(Target[Name], Value);
+                    Target[Name] = publicObject.mergePatch(Target[Name], Value);
                 }
             }
-            return Target
+            return Target;
         } else {
-            return Patch
+            return Patch;
         }
     }
 }
+module.exports = publicObject;
